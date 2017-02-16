@@ -1,5 +1,6 @@
 package parmeetenter.jsonparsing1;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -69,6 +70,7 @@ String finaljson= buff.toString();
     JSONObject obj1=(JSONObject)array.get(0);
 
 return obj1.get("name").toString()+";"+obj1.get("sid").toString()+";"+obj1.get("email").toString()+";"+obj1.get("phno").toString();
+
 }catch(Exception e){
     Log.d(TAG, "doInBackground: "+e);
 }

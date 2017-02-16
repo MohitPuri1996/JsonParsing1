@@ -10,24 +10,19 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-
+        <activity android:name=".Start">
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-
+            </intent-filter>
         </activity>
+        <activity android:name=".MainActivity">
         <activity android:name=".Main2Activity" />
-    </application>
+        <activity android:name=".Main3Activity"></activity>
 
-    <intent-filter>
-        <activity android:name=".Main3Activity">
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
 
         </activity>
-    </intent-filter>
-
+    </application>
 
 </manifest>
